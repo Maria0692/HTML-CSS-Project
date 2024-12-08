@@ -242,16 +242,19 @@ border-color: var(--color5);
 
 
 /* Media query for responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .card {
         flex-direction: column; /* Change layout to vertical on small screens */
-        align-items: flex-start; /* Align items to the start */
+        align-items: flex-start;
+        padding: 20px; /* Align items to the start */
     }
     
     .card img {
         width: 100%; /* Make image responsive */
         height: auto; /* Maintain aspect ratio */
     }
+
+    
 }
 
 

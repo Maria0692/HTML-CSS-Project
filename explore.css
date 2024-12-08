@@ -117,6 +117,11 @@ body {
     border: 2px solid white;
     text-align: center;
 }
+
+h1{
+    color: #f8b736;
+}
+
 .cards {    
     display: flex;    
     flex-direction: column;     
@@ -186,7 +191,7 @@ body {
     margin: 0 0 20px;    
     font-size: 1.3em;    
     font-weight: 100;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 }
 
 
