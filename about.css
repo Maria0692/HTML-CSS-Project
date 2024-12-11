@@ -11,7 +11,6 @@ body {
     --color4: #1cba70;
     --color5: #25c4dc;
     background-color: #000000;
-    padding: 20px;
 }
 .nav-bar {
     max-width:  1200px;
@@ -92,119 +91,86 @@ body {
 
 
 
-.body{
-    background-color: #000000;
-    font-family: 'Roboto', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    
-    background-color: #000000; 
-    color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-}
-
-.container {
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .container {
     max-width: 1200px;
-    height: 800px;
     margin: 0 auto;
+    padding: 60px;
+  }
+  
+  .hero {
+    background-image: url('img/pexels-santesson89-10391629.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    position: relative; 
-}
-
-.container::before {
-    content: "";
-    background-image: url('img/pexels-allan-ramirez-1089921178-26898334.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    z-index: -1; 
-    border-radius: 10px; 
-}
-
-h1 {
     text-align: center;
-    background-color: black;
-    color: #ffffff;
-    padding: 20px;
-    margin-bottom: 40px;
-    border: 2px solid white;
-}
-
-.section {
-    padding: 20px;
-    border-left: 5px solid;
- 
-    margin-bottom: 20px;
-}
-
-.support {
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin-top: 80px;
-}
-
-
-
-
-.text1 {
-    font-size: 1.3em;
-    line-height: 1.5;
-    padding: 20px;
-}
-
-.book-button {    
-    background-color: #FFD700;     
-    color: black;    
-    border: none;    
-    padding: 15px 30px;    
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 24px;
+    font-style: italic;
+  }
+  
+  .museum-info {
+    margin-top: 60px;
+    line-height: 1.2;
+    border-left: 3px solid var(--color3);
+    margin-left: 10px;
+  }
+  
+  .museum-info p {
+    margin-bottom: 30px;
     font-size: 1.2em;
-    font-weight: 500;    
-    border-radius: 5px;    
-    cursor: pointer;    
-    margin-top: 20px;    
-    position: relative; 
-    z-index: 2; 
-}
-
-.book-button:hover {    
-    background-color: #FFC300; 
-}
-
-.button-container {    
-    display: flex;    
-    justify-content: flex-end;   
-    margin-top: 20px; 
-}
-
-
-@media (max-width: 768px) {
+    margin-left: 20px;
+    
+  }
+  
+  @media (max-width: 768px) {
     .container {
-        padding: 20px;
+      padding: 40px;
     }
-    
+  
+    .hero {
+      height: 300px;
+    }
+  
     h1 {
-        font-size: 1.5em;
+      font-size: 36px;
     }
-    
-    h2 {
-        font-size: 1.2em;
+  
+    .tagline {
+      font-size: 20px;
     }
-}
+  
+    .museum-info {
+      margin-top: 40px;
+    }
+  }
 
-footer {
+
+
+
+  footer {
     background-color: #121212; 
     color: #ffffff; 
     padding: 20px; 
