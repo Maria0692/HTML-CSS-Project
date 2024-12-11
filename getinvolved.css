@@ -102,8 +102,8 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000000; /* Fallback color */
+    
+    background-color: #000000; 
     color: #ffffff;
     margin: 0;
     padding: 20px;
@@ -183,5 +183,59 @@ p {
     
     h2 {
         font-size: 1.2em;
+    }
+}
+
+
+footer {
+    background-color: #121212; 
+    color: #ffffff; 
+    padding: 20px; 
+    border-top: 2px solid #ffffff; 
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    text-decoration: none; 
+}
+
+.social-icons {
+    margin-bottom: 40px; 
+}
+
+.social-icons a {
+    margin: 0 20px;
+    text-decoration: none; 
+}
+
+.social-icons img {
+    width: 40px; 
+    height: auto; 
+}
+
+.contact-info p {    
+    margin: 5px 0; 
+} 
+
+.contact-info p:first-child {
+    font-size: 1.2em; 
+    font-weight: bold; 
+}
+
+
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+    
+    .social-icons {
+        margin-bottom: 0; 
     }
 }

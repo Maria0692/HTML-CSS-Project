@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    --color1: #FFF ;
+    --color2: #070707 ;
+    --color3: #f8b736;
+    --color4: #1cba70;
+    --color5: #25c4dc;
+    background-color: #000000;
+}
+.nav-bar {
+    max-width:  1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+.logo img {width: 60px;}
+.menu {
+    display: flex;
+    max-width: 600px;
+    flex: 1;
+}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 30px;
+    right: 30px;
+}
+
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+
+.body{
+    background-color: #000000;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+}
+
+.welcome-container {
+    position: relative;
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url('img/pexels-cax0000-1959065.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(255, 255, 255); 
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px black ;
+}
+
+body {
+    margin: 0;
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.section {
+    margin-bottom: 10px;
+    background: rgba(102, 102, 102, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: justify; 
+}
+
+.flex-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+h2 {
+    margin: 30px;
+    font-size: 2em; 
+    text-align: center;
+    border: 2px solid white;
+    background-color: #000000;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 2em; 
+}
+
+p {
+    font-size: 1.5em; 
+    margin: 15px 25px; 
+    line-height: 1em; 
+    flex: 1; 
+  
+}
+
+img {
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+
+.location-hours-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 0; 
+    flex-wrap: wrap; 
+}
+
+.location, .hours {
+    background: rgba(48, 48, 48, 0.7);
+    padding: 20px; 
+    border-radius: 8px; 
+    flex: 1 1 300px;
+    max-width: 600px; 
+    margin: 10px; 
+    margin-top: 10px;
+    text-align: center; 
+    color: #ffffff;
+    
+}
+
+.location {
+    background-image: url('img/location-pin-svgrepo-com.svg'); 
+       background-size: 220px 220px;    
+       background-repeat: no-repeat;    background-position: center;
+       position: relative;
+       border-left: #FFF 6px solid;
+       
+}
+
+.hours {
+    background-image: url('img/time-svgrepo-com.svg'); 
+    background-size: 200px 200px;    
+    background-repeat: no-repeat;    background-position: center;
+    position: relative;
+    border-left: #FFF 6px solid; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; 
+        align-items: center; /
+    }
+    
+    .location-hours-container {
+        flex-direction: column; 
+    }
+    
+    .location, .hours {
+        margin: 10px 0; 
+        max-width: 100%; 
+        padding: 20px; /
+    }
+    
+    img {
+        max-width: 80%; 
+    }
+
+    p {
+        margin: 10px 0; 
+        text-align: center; 
+    }
+}
