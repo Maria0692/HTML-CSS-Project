@@ -141,7 +141,7 @@ body {
 
 .section {
     margin-bottom: 10px;
-    background: rgba(102, 102, 102, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     border-radius: 8px;
     text-align: justify; 
@@ -152,16 +152,16 @@ body {
     align-items: center; 
     justify-content: center;
     flex-wrap: wrap; 
+    
 }
 
 h2 {
-    margin: 30px;
-    font-size: 2em; 
-    text-align: center;
-    border: 2px solid white;
+    margin: 20px;
+    font-size: 1.5em; 
+    text-align: left;
+    border-bottom: 4px solid var(--color4);
     background-color: #000000;
-    border-radius: 3px;
-    padding: 10px;
+    padding: 15px;
 }
 
 h3 {
@@ -170,15 +170,18 @@ h3 {
 }
 
 p {
-    font-size: 1.5em; 
-    margin: 15px 25px; 
-    line-height: 1em; 
-    flex: 1; 
+    font-size: 1.2em; 
+    margin: 5px 25px; 
+    line-height: 1.5em; 
+    flex: 1;
+    text-align: left ;
+    position: relative;
+
   
 }
 
 img {
-    max-width: 300px; 
+    max-width: 500px; 
     height: auto; 
     border-radius: 8px; 
 }
@@ -194,7 +197,6 @@ img {
 .location, .hours {
     background: rgba(48, 48, 48, 0.7);
     padding: 20px; 
-    border-radius: 8px; 
     flex: 1 1 300px;
     max-width: 600px; 
     margin: 10px; 
@@ -245,7 +247,60 @@ img {
     }
 
     p {
-        margin: 10px 0; 
-        text-align: center; 
+        margin: 20px 0; 
+        text-align: left; 
+    }
+}
+ 
+footer {
+    background-color: #121212; 
+    color: #ffffff; 
+    padding: 20px; 
+    border-top: 2px solid #ffffff;
+    margin-top: 160px;
+}
+
+.footer-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 40px; 
+}
+
+.social-icons a {
+    margin: 0 20px;
+    text-decoration: none; 
+}
+
+.social-icons img {
+    width: 40px; 
+    height: auto; 
+}
+
+.contact-info p {    
+    margin: 5px 0; 
+} 
+
+.contact-info p:first-child {
+    font-size: 1.2em; 
+    font-weight: bold; 
+}
+
+
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row; 
+        justify-content: space-between; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+    
+    .social-icons {
+        margin-bottom: 0; 
     }
 }
