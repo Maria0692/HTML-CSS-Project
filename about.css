@@ -176,6 +176,8 @@ body {
     padding: 20px; 
     border-top: 2px solid #ffffff; 
     margin-top: 100px;
+    max-width: 1200px;
+    margin: 160px auto 0;
 }
 
 .footer-container {
